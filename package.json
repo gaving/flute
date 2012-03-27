@@ -1,0 +1,27 @@
+{
+  "name": "flute",
+  "version": "1.0.0",
+  "description": "Musical pipeline",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/gaving/flute.git"
+  },
+  "author": "Gavin Gilmour <gavin@brokentrain.net>",
+  "directories": {
+    "lib": "."
+  },
+  "engines": {
+    "node": "0.6"
+  },
+  "dependencies": {
+    "colors": "*",
+    "underscore": "*",
+    "optimist": "*",
+    "coffee-script": "*",
+    "play": "*",
+    "yaml": "*"
+  },
+  "bin": {
+    "flute": "./bin/flute"
+  }
+}
