@@ -18,11 +18,9 @@
     "underscore": "*",
     "optimist": "*",
     "coffee-script": "*",
-    "yaml": "*"
+    "yaml": "*",
+    "play": "git://github.com/gaving/play.js.git#master"
   },
-  "bundledDependencies": [
-    "play"
-  ],
   "bin": {
     "flute": "./bin/flute"
   }
