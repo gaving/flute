@@ -8,7 +8,7 @@ play   = require('play').Play()
 
 class Flute
   constructor: ->
-    play.usePlayer('afplay');
+    play.usePlayer 'afplay'
     @lib = false
   library: ->
     @lib = true
@@ -21,7 +21,7 @@ class Flute
       @config (config) ->
         cb play.sound _.first(_.shuffle(config.tracks))
     else
-      cb play.sound 'data/flute.mp3'
+      cb play.sound path.join(__dirname, '../data/flute.mp3')
   process: (fd) ->
     @play (snd) ->
       fd.resume()
