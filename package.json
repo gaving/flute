@@ -18,9 +18,11 @@
     "underscore": "*",
     "optimist": "*",
     "coffee-script": "*",
-    "play": "*",
     "yaml": "*"
   },
+  "bundledDependencies": [
+    "play"
+  ],
   "bin": {
     "flute": "./bin/flute"
   }
