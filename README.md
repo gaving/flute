@@ -2,7 +2,7 @@
 
 Are you bored of silent pipelines? Want to *hear* when something's working?
 
-Meet *flute*, the musical pipe!
+Meet *flute*.
 
 ## Screencast
 
