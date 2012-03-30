@@ -6,7 +6,7 @@ Meet *flute*, the musical pipe!
 
 ## Screencast
 
-[Here's a screencast.](screen cast link)
+[Here's a screencast.](https://vimeo.com/39440084)
 
 ## Install
 
