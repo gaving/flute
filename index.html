@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Flute : Add some music to your pipelines" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Flute</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/gaving/flute">Fork Me on GitHub</a>
+
+          <h1 id="project_title">Flute</h1>
+          <h2 id="project_tagline">Add some music to your pipelines</h2>
+
+          <section id="downloads">
+            <a class="zip_download_link" href="https://github.com/gaving/flute/zipball/master">Download this project as a .zip file</a>
+            <a class="tar_download_link" href="https://github.com/gaving/flute/tarball/master">Download this project as a tar.gz file</a>
+          </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Flute</h1>
+
+<p>Are you bored of silent pipelines? Want to <em>hear</em> when something's working?</p>
+
+<p>Meet <em>flute</em>.</p>
+
+<h2>Screencast</h2>
+
+<p><a href="https://vimeo.com/39440084">Here's a screencast.</a></p>
+
+<h2>Install</h2>
+
+<pre><code>npm install flute -g
+
+♬♩ Musical pipeline ♬♩
+Usage: flute [args]
+
+Options:
+  -t, --tracks  use tracks from config ~/.flute.yml
+</code></pre>
+
+<h2>Configure</h2>
+
+<p>Flute passed with no arguments plays a rubbish flute sound. However, this can
+easily be changed to a list of tracks by specifying them in a config file with
+the following steps:-</p>
+
+<ul>
+<li>Create a ~/.flute.yml file</li>
+<li>
+<p>Create a file with the absolute path of your files (tracks: at the top is important):-</p>
+
+<p>tracks: </p>
+
+<ul>
+<li>/Volumes/WD/Music/iTunes/iTunes Music/Music/Lana Del Rey/Born to Die/06 National Anthem.m4a</li>
+<li>/Volumes/WD/Music/iTunes/iTunes Music/Music/Compilations/Final Fantasy  VII/1-07 Hurry!.m4a</li>
+<li>/Volumes/WD/Music/iTunes/iTunes Music/Music/Compilations/Final Fantasy  VII/4-08 Hurry Faster!.m4a</li>
+</ul>
+</li>
+</ul><p>Pass the -t argument to flute and it will pick one of these at random.</p>
+
+<h2>Examples</h2>
+
+<p>Inject flute into your pipeline wherever:-</p>
+
+<pre><code> pv -L 5k ~/Desktop/eI3s-dvZysU.flv | flute &gt; /dev/null
+
+ youtube-dl <a href="http://www.youtube.com/watch?v=azOWjmfUqVw">http://www.youtube.com/watch?v=azOWjmfUqVw</a> -o - | flute &gt; harris.flv
+
+ dd if=/dev/urandom | pv -L 10M | flute -t &gt; k
+</code></pre>
+
+<h2>Note</h2>
+
+<p>Flute has only been tested on OSX.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Flute maintained by <a href="https://github.com/gaving">gaving</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-30540568-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
