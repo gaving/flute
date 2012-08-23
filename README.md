@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/gaving/flute.png)](http://travis-ci.org/gaving/flute)
 # Flute
 
 Are you bored of silent pipelines? Want to *hear* when something's working?
