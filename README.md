@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/gaving/flute.png)](http://travis-ci.org/gaving/flute)
 # Flute
 
 Are you bored of silent pipelines? Want to *hear* when something's working?
@@ -43,8 +44,3 @@ Inject flute into your pipeline wherever:-
      youtube-dl http://www.youtube.com/watch?v=azOWjmfUqVw -o - | flute > harris.flv
 
      dd if=/dev/urandom | pv -L 10M | flute -t > k
-
-## Note
-
-Flute has only been tested on OSX.
-
