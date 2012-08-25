@@ -8,10 +8,13 @@ play   = require('play').Play()
 
 class Flute
   constructor: ->
-    play.usePlayer 'afplay'
+    play.usePlayer 'mplayer'
     @lib = false
-  library: ->
-    @lib = true
+  useLibrary: (library) ->
+    @lib = library
+  useTrack: (track, skip) ->
+    @track = track
+    @skip = skip
   config: (cb) ->
     fs.readFile path.join(process.env.HOME, '.flute.yml'), (err, text) ->
       throw err if err
@@ -21,7 +24,14 @@ class Flute
       @config (config) ->
         cb play.sound _.first(_.shuffle(config.tracks))
     else
-      cb play.sound path.join(__dirname, '../data/flute.mp3')
+      if @track
+        path = @track
+      else
+        path = path.join(__dirname, '../data/flute.mp3')
+      if @skip
+        cb play.sound path, ['-ss', @skip]
+      else
+        cb play.sound path
   process: (fd) ->
     @play (snd) ->
       fd.resume()
