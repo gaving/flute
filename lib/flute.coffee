@@ -42,5 +42,3 @@ class Flute
         process.exit 0
 
 module.exports = new Flute
-
-# vim:ft=coffee ts=2 sw=2 et :
