@@ -8,7 +8,6 @@ play   = require('play').Play()
 
 class Flute
   constructor: ->
-    play.usePlayer 'mplayer'
     @lib = false
   useLibrary: (library) ->
     @lib = library
