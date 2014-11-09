@@ -1,6 +1,8 @@
-[![build status](https://secure.travis-ci.org/gaving/flute.png)](http://travis-ci.org/gaving/flute)
-
 # Flute
+
+[![npm](https://nodei.co/npm/flute.png)](https://nodei.co/npm/flute/)
+
+[![build status](https://secure.travis-ci.org/gaving/flute.png)](http://travis-ci.org/gaving/flute)
 
 Bored of silent pipelines? Want to *hear* when somethings working?
 
